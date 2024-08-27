@@ -1,5 +1,122 @@
-template-repository (1.0-1) unstable; urgency=medium
+libmodule-manifest-perl (1.09-2) unstable; urgency=medium
 
-  * Initial release
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 15 Jun 2022 20:08:23 +0100
+
+libmodule-manifest-perl (1.09-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Brian Cassidy from Uploaders. Thanks for your work!
+
+  [ Damyan Ivanov ]
+  * New upstream version 1.09
+  * remove inc/Module/Install from d/copyright (disappeared upstream)
+  * put MANIFEST in smoke-files to make autopkgtest command 1 pass
+  * bump debhelper compatibility level to 9
+  * add pod-spelling.patch correcting a small typo in documentation
+  * declare conformance with Policy 4.1.2
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 21 Dec 2017 20:12:53 +0000
+
+libmodule-manifest-perl (1.08-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Jonathan Yu ]
+  * New upstream release
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+    (Closes: #710943)
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Don't run release tests during package build.
+  * Switch to "3.0 (quilt)" source format.
+  * debian/rules: minimize with dh(1).
+  * Bump debhelper compatibility level to 8.
+  * Set Standards-Version to 3.9.4 (no changes).
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 03 Jun 2013 20:56:21 +0200
+
+libmodule-manifest-perl (0.07-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Brian Cassidy <brian.cassidy@gmail.com>  Thu, 23 Apr 2009 20:23:24 -0300
+
+libmodule-manifest-perl (0.06-1) unstable; urgency=low
+
+  * New upstream release.
+  * Make build dependency on libtest-warn-perl versioned.
+  * Add /me to Uploaders.
+  * Set Standards-Version to 3.8.1 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 12 Mar 2009 23:26:34 +0100
+
+libmodule-manifest-perl (0.05-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+    + debian/copyright: Update years of copyright.
+    + Add build-dep on libtest-warn-perl and libtest-exception-perl.
+  * Install examples.
+  * Add myself to Uploaders.
+
+  [ gregor herrmann ]
+  * debian/control: slightly rephrase short description.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Mon, 09 Mar 2009 01:07:41 +0100
+
+libmodule-manifest-perl (0.04-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Brian Cassidy ]
+  * New upstream release
+  * debian/control:
+   + Add myself to Uploaders
+   + Add libpod-simple-perl to build deps
+  * debian/copyright: generalize copyright for debian/*
+
+ -- Brian Cassidy <brian.cassidy@gmail.com>  Fri, 12 Dec 2008 10:13:32 -0400
+
+libmodule-manifest-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release. Closes: #498817 -- ITP
+
+ -- Damyan Ivanov <dmn@debian.org>  Sat, 13 Sep 2008 17:13:59 +0300

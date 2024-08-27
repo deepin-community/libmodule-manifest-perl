@@ -1,0 +1,17 @@
+Description: small spelling mistake in POD
+ existance → existence
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=123927
+Bug: https://rt.cpan.org/Ticket/Display.html?id=123927
+Author: Damyan Ivanov <dmn@debian.org>
+
+--- a/lib/Module/Manifest.pm
++++ b/lib/Module/Manifest.pm
+@@ -42,7 +42,7 @@ the scenes, and you can concentrate the
+ This module is quite similar to L<ExtUtils::Manifest>, or is at least
+ similar in scope. However, there is a general difference in approach.
+ 
+-L<ExtUtils::Manifest> is imperative, requires the existance of the actual
++L<ExtUtils::Manifest> is imperative, requires the existence of the actual
+ F<MANIFEST> file on disk, and requires that your current directory remains
+ the same.
+ 
