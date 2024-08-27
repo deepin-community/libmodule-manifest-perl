@@ -1,0 +1,44 @@
+Revision history for Module-Manifest
+
+1.09      2017-12-20 01:34:15Z
+        - switch packaging to Dist::Zilla, which makes the distribution
+          installable again on perl 5.27.7  (See RT#123867)
+
+1.08      2010-06-15
+	- Updated to Module::Install::DSL 0.99
+	- Updated documentation
+	- Changed to a production version
+
+0.07      2009-04-20
+	- Upgrading to Module::Install::DSL 0.83
+	- Fixes for Win32
+	- Removing distribution-specific skip file (the shared on works fine)
+	- Removing custom README file (the generated one is the same)
+
+0.06      2009-03-12
+	- Adding a missing Test::Warn dependency
+	- Updated Module::Install to 0.79
+
+0.05      2008-12-20
+	- Added option for file-less parsing
+	- Clarified the docs
+		o Added a synopsis
+		o Added compatibility notes
+		o Changed duplicate fatal error to a warning (cluck vs carp)
+	- Added myself (Jonathan Yu) as a developer
+	- Added a README file made by hand from the perldoc
+	- Added a bunch of test files
+
+0.04      2008-12-11
+	- Upgrading Module::Install to 0.77
+	- Adding a missing use Carp (Jonathan Yu)
+
+0.03      2008-05-05
+	- Upgrading Module::Install
+	- Fixing a broken META.yml
+
+0.02      2006-09-25
+	- Fixing a major POD bug (got the name wrong) :(
+
+0.01      2006-09-24
+	- original version
